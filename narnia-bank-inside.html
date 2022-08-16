@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narnia Bank Limited</title>
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-sky-500	text-center mt-12">Lets's Check Your Balance</h1>
+    </header>
+    <main>
+        <section class="w-3/5 mx-auto mt-12">
+            <!-- balance section  -->
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-green-500	px-12 py-10 rounded-xl">
+                    <h3 class="text-2xl font-semibold">Deposit</h3>
+                    <p class="text-4xl font-bold">$<span id="previous-depositAmount">00</span></p>
+                </div>
+                <div class="bg-red-500	px-12 py-10 rounded-xl">
+                    <h3 class="text-2xl font-semibold">Withdraw</h3>
+                    <p class="text-4xl font-bold">$<span id="previous-withdraw">00</span></p>
+                </div>
+                <div class="bg-emerald-500  px-12 py-10 rounded-xl">
+                    <h3 class="text-2xl font-semibold">Balance</h3>
+                    <p class="text-4xl font-bold">$<span id="previous-balance">1500</span></p>
+                </div>
+            </div>
+            <!-- deposit and withdraw  -->
+            <div class="grid grid-cols-2 gap-4 mt-12 ">
+
+                <div class="bg-green-500 px-8 py-10 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Please Deposit Here</h3>
+                    <input class="block mb-3 w-4/5 p-2 text-orange-500 font-bold" type="text" name=""
+                        id="deposit-amount" placeholder="$ Your Deposit Amount">
+                    <button id="btn-deposit"
+                        class="bg-emerald-300 px-8 py-1 rounded-lg font-semibold hover:bg-rose-600 hover:text-white	">Deposit</button>
+                </div>
+                <div class="bg-fuchsia-500 px-8 py-10 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Please Withdraw Here</h3>
+                    <input class="block mb-3 w-4/5 p-2 text-orange-500 font-bold" type="text" name=""
+                        id="withdraw-amount" placeholder="$ Your Withdraw Amount">
+                    <button id="btn-withdraw"
+                        class="bg-emerald-300 px-8 py-1 rounded-lg font-semibold hover:bg-rose-600 hover:text-white">Withdraw</button>
+                </div>
+            </div>
+            <div class="text-center">
+                <button id="btn-home"
+                class="bg-emerald-300 px-8 py-1 rounded-lg font-semibold hover:bg-rose-600 hover:text-white mt-5">Home</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
